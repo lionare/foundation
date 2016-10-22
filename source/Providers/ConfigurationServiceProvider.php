@@ -2,6 +2,7 @@
 
 namespace Foundation\Providers;
 
+use Agreed\Technical\Configuration;
 use Support\ServiceProvider;
 
 class ConfigurationServiceProvider extends ServiceProvider
@@ -19,7 +20,7 @@ class ConfigurationServiceProvider extends ServiceProvider
 			$view = require configuration_path ( ) . '/view/view.php';
 			$configuration->set ( 'theme path', $view [ 'path' ] );
 
-			return $Configuration;
+			return $configuration;
 		} );
 	}
 }

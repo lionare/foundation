@@ -48,6 +48,6 @@ foreach ( $fileSystem->findFilesIn ( $directory->at ( '/application' ) ) as $fil
 */
 
 $kernel = new HTTP\Kernel ( $application->make ( Routing\Router::class ), $application );
-$response = $kernel->handle ( $request = $application->make ( HTTP\\Request::class ) );
+$response = $kernel->handle ( $request = $application->make ( HTTP\Request::class ) );
 $response->send ( );
 $kernel->terminate ( $request, $response );
