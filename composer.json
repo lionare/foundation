@@ -13,6 +13,7 @@
 	],
 	"require" : {
 		"lionar/foundation": "*",
+		"lionar/routing": "*",
 		"lionare/file-system": "*",
 		"lionare/support": "*",
 		"lionare/view": "*",

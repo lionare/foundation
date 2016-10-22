@@ -17,8 +17,6 @@ function ( ) use ( $application )
 	return $application;
 } );
 
-require __DIR__ . '/configuration.php';
-
 foreach ( require __DIR__ . '/providers.php' as $provider )
 	( new $provider ( $application ) )->register ( );
 
@@ -41,3 +39,15 @@ $directory = $application->make ( 'FileSystem\\Facades\\DirectoryFinder' );
 foreach ( $fileSystem->findFilesIn ( $directory->at ( '/application' ) ) as $file )
 	if ( $file->extension === 'php' )
 		require base_path ( ) . $file->path;
+
+
+/*
+|--------------------------------------------------------------------------
+| Handling the HTTP request.
+|--------------------------------------------------------------------------
+*/
+
+$kernel = new HTTP\Kernel ( $application->make ( Routing\Router::class ), $application );
+$response = $kernel->handle ( $request = $application->make ( HTTP\\Request::class ) );
+$response->send ( );
+$kernel->terminate ( $request, $response );
