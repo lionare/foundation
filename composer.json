@@ -25,7 +25,7 @@
 			"Foundation\\": "source" 
     	},
     	"files": [
-
+    		"source/start.php"
     	]
   	},
 	"autoload-dev": {
