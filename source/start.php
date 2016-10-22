@@ -16,6 +16,8 @@ function ( ) use ( $application )
 	return $application;
 } );
 
+require __DIR__ . '/configuration.php';
+
 foreach ( require __DIR__ . '/providers.php' as $provider )
 	( new $provider ( $application ) )->register ( );
 
