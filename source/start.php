@@ -2,6 +2,7 @@
 
 $application = new Foundation\Application;
 
+require __DIR__ . '/../../support/source/readability.php';
 
 /*
 |--------------------------------------------------------------------------
