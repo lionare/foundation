@@ -1,0 +1,39 @@
+{
+	"name": "lionare/foundation",
+	"description": "Lionare's core setup.",
+	"type": "library",
+	"keywords": [ "lionare", "Foundation", "Core" ],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Aron Wouters",
+			"email": "lionar@mail.com",
+			"role": "Developer"
+    	}
+	],
+	"require" : {
+		"lionare/file-system": "*",
+		"lionare/support": "*",
+		"php": ">=5.5.9"
+  	},
+	"require-dev": {
+		"lionar/testing": "*"
+	},
+	"autoload": {
+    	"psr-4": {
+			"Foundation\\": "source" 
+    	},
+    	"files": [
+
+    	]
+  	},
+	"autoload-dev": {
+		"psr-4": {
+			"Foundation\\Tests\\": "tests"
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
