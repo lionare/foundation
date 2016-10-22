@@ -12,9 +12,10 @@
     	}
 	],
 	"require" : {
-		"lionare/file-system": "*",
 		"lionar/foundation": "*",
+		"lionare/file-system": "*",
 		"lionare/support": "*",
+		"lionare/view": "*",
 		"php": ">=5.5.9"
   	},
 	"require-dev": {

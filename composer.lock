@@ -4,21 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8dcb4d036a5954b4b44320563ef283b6",
-    "content-hash": "5ca9a35c9d794626574675c8f85d4bb7",
+    "hash": "ec47bb67a9dc91346bc71ea5bf7d4fd3",
+    "content-hash": "27bc35755c5aa7cd4ec11c330089f923",
     "packages": [
+        {
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
         {
             "name": "lionar/agreements",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lionar/agreements.git",
-                "reference": "da9a5f2762517127e15c76a81914f8340f32fc5b"
+                "reference": "badbcd8d39b18bbec08f198e46e664fae21fb9eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lionar/agreements/zipball/da9a5f2762517127e15c76a81914f8340f32fc5b",
-                "reference": "da9a5f2762517127e15c76a81914f8340f32fc5b",
+                "url": "https://api.github.com/repos/lionar/agreements/zipball/badbcd8d39b18bbec08f198e46e664fae21fb9eb",
+                "reference": "badbcd8d39b18bbec08f198e46e664fae21fb9eb",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +78,7 @@
                 "component",
                 "lionar"
             ],
-            "time": "2016-10-03 09:13:40"
+            "time": "2016-10-22 16:36:51"
         },
         {
             "name": "lionar/file-system",
@@ -101,6 +128,53 @@
                 "lionar"
             ],
             "time": "2016-10-18 08:56:27"
+        },
+        {
+            "name": "lionar/foundation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/foundation.git",
+                "reference": "9acec80f69ffd2c0362e652b46bbcd794cea53cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/foundation/zipball/9acec80f69ffd2c0362e652b46bbcd794cea53cd",
+                "reference": "9acec80f69ffd2c0362e652b46bbcd794cea53cd",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/agreements": "*",
+                "php": ">=5.5.9",
+                "php-di/php-di": "*"
+            },
+            "require-dev": {
+                "lionar/testing": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Foundation\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Lionar's foundation component",
+            "keywords": [
+                "component",
+                "http",
+                "lionar"
+            ],
+            "time": "2016-09-30 12:42:12"
         },
         {
             "name": "lionar/support",
@@ -156,12 +230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lionare/file-system.git",
-                "reference": "d73b82ad0f3cfcf1827cc25b3fa5c11cec570528"
+                "reference": "4b546a8c4809af39a27653cabd17108896ebe133"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lionare/file-system/zipball/d73b82ad0f3cfcf1827cc25b3fa5c11cec570528",
-                "reference": "d73b82ad0f3cfcf1827cc25b3fa5c11cec570528",
+                "url": "https://api.github.com/repos/lionare/file-system/zipball/4b546a8c4809af39a27653cabd17108896ebe133",
+                "reference": "4b546a8c4809af39a27653cabd17108896ebe133",
                 "shasum": ""
             },
             "require": {
@@ -195,7 +269,7 @@
                 "Lionare",
                 "file system"
             ],
-            "time": "2016-10-22 13:44:25"
+            "time": "2016-10-22 14:41:19"
         },
         {
             "name": "lionare/support",
@@ -203,12 +277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lionare/support.git",
-                "reference": "90092013f6d9fd22b9af9e7fea7a8e456fba098c"
+                "reference": "dc614e6303574427e75a2a66d703089e22d0a23b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lionare/support/zipball/90092013f6d9fd22b9af9e7fea7a8e456fba098c",
-                "reference": "90092013f6d9fd22b9af9e7fea7a8e456fba098c",
+                "url": "https://api.github.com/repos/lionare/support/zipball/dc614e6303574427e75a2a66d703089e22d0a23b",
+                "reference": "dc614e6303574427e75a2a66d703089e22d0a23b",
                 "shasum": ""
             },
             "require": {
@@ -243,7 +317,226 @@
                 "Lionare",
                 "support"
             ],
-            "time": "2016-10-22 14:18:16"
+            "time": "2016-10-22 14:53:35"
+        },
+        {
+            "name": "lionare/view",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionare/view.git",
+                "reference": "86fa8515c835d24e3585999653118617736d6444"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionare/view/zipball/86fa8515c835d24e3585999653118617736d6444",
+                "reference": "86fa8515c835d24e3585999653118617736d6444",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/agreements": "*",
+                "php": ">=5.6.4",
+                "xiaoler/blade": "*"
+            },
+            "require-dev": {
+                "lionar/testing": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "View\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Lionare view component.",
+            "keywords": [
+                "Lionare",
+                "view"
+            ],
+            "time": "2016-10-22 17:58:02"
+        },
+        {
+            "name": "php-di/invoker",
+            "version": "1.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI/Invoker.git",
+                "reference": "1f4ca63b9abc66109e53b255e465d0ddb5c2e3f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI/Invoker/zipball/1f4ca63b9abc66109e53b255e465d0ddb5c2e3f7",
+                "reference": "1f4ca63b9abc66109e53b255e465d0ddb5c2e3f7",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "~1.1"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1.8",
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Invoker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Generic and extensible callable invoker",
+            "homepage": "https://github.com/PHP-DI/Invoker",
+            "keywords": [
+                "callable",
+                "dependency",
+                "dependency-injection",
+                "injection",
+                "invoke",
+                "invoker"
+            ],
+            "time": "2016-07-14 13:09:58"
+        },
+        {
+            "name": "php-di/php-di",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI/PHP-DI.git",
+                "reference": "3a3c91537699d88ae7c733d4b52f21c03c8bf7cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI/PHP-DI/zipball/3a3c91537699d88ae7c733d4b52f21c03c8bf7cc",
+                "reference": "3a3c91537699d88ae7c733d4b52f21c03c8bf7cc",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "~1.0",
+                "php": ">=5.5.0",
+                "php-di/invoker": "^1.3.2",
+                "php-di/phpdoc-reader": "^2.0.1"
+            },
+            "provide": {
+                "container-interop/container-interop-implementation": "^1.0"
+            },
+            "replace": {
+                "mnapoli/php-di": "*"
+            },
+            "require-dev": {
+                "doctrine/annotations": "~1.2",
+                "doctrine/cache": "~1.4",
+                "mnapoli/phpunit-easymock": "~0.2.0",
+                "ocramius/proxy-manager": "~1.0|~2.0",
+                "phpunit/phpunit": "~4.5"
+            },
+            "suggest": {
+                "doctrine/annotations": "Install it if you want to use annotations (version ~1.2)",
+                "doctrine/cache": "Install it if you want to use the cache (version ~1.4)",
+                "ocramius/proxy-manager": "Install it if you want to use lazy injection (version ~1.0 or ~2.0)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DI\\": "src/DI/"
+                },
+                "files": [
+                    "src/DI/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The dependency injection container for humans",
+            "homepage": "http://php-di.org/",
+            "keywords": [
+                "container",
+                "dependency injection",
+                "di"
+            ],
+            "time": "2016-08-29 06:16:56"
+        },
+        {
+            "name": "php-di/phpdoc-reader",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI/PhpDocReader.git",
+                "reference": "83f5ead159defccfa8e7092e5b6c1c533b326d68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI/PhpDocReader/zipball/83f5ead159defccfa8e7092e5b6c1c533b326d68",
+                "reference": "83f5ead159defccfa8e7092e5b6c1c533b326d68",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpDocReader\\": "src/PhpDocReader"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PhpDocReader parses @var and @param values in PHP docblocks (supports namespaced class names with the same resolution rules as PHP)",
+            "keywords": [
+                "phpdoc",
+                "reflection"
+            ],
+            "time": "2015-11-29 10:34:25"
+        },
+        {
+            "name": "xiaoler/blade",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/XiaoLer/blade.git",
+                "reference": "4a8ea96dfcf1887efc7ee3cfb5c52eeec389d7ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/XiaoLer/blade/zipball/4a8ea96dfcf1887efc7ee3cfb5c52eeec389d7ec",
+                "reference": "4a8ea96dfcf1887efc7ee3cfb5c52eeec389d7ec",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Xiaoler\\Blade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scholer Liu",
+                    "email": "scholer_l@live.com"
+                }
+            ],
+            "description": "an independent version of laravel view template - blade",
+            "homepage": "http://0x1.im",
+            "time": "2016-09-18 14:33:13"
         }
     ],
     "packages-dev": [

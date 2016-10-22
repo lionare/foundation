@@ -9,4 +9,5 @@
 return array (
 
 	'FileSystem\\ServiceProvider',
+	'View\\ServiceProvider',
 );
