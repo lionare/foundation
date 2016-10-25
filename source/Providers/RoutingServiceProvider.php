@@ -2,6 +2,7 @@
 
 namespace Foundation\Providers;
 
+use Agreed\Technical\Configuration;
 use Routing\Router;
 use Support\ServiceProvider;
 

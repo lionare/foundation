@@ -17,7 +17,7 @@ class ConfigurationServiceProvider extends ServiceProvider
 
 			$configuration->set ( 'routes', require configuration_path ( ) . '/routes.php' );
 
-			$view = require configuration_path ( ) . '/view/view.php';
+			$view = require configuration_path ( ) . '/view/global.php';
 			$configuration->set ( 'theme path', $view [ 'path' ] );
 
 			return $configuration;
