@@ -22,10 +22,19 @@ foreach ( require __DIR__ . '/providers.php' as $provider )
 	( new $provider ( $application ) )->register ( );
 
 
-
-
 $fileSystem = $application->make ( 'FileSystem\\FileSystem' );
 $directory = $application->make ( 'FileSystem\\Facades\\DirectoryFinder' );
+
+
+/*
+|--------------------------------------------------------------------------
+| Require developer made services.
+|--------------------------------------------------------------------------
+*/
+
+foreach ( $fileSystem->findFilesIn ( $directory->at ( '/providers' ) ) as $file )
+	if ( $file->extension === 'php' )
+		require ltrim ( $file->path, '/' );
 
 
 /*
